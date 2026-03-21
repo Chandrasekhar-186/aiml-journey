@@ -5,7 +5,7 @@
 ## Completed Topics
 - Python: OOP, Advanced, Power Features, 
   Exceptions, NumPy, Pandas
-- SQL: All 12 SQLBolt lessons complete ✅
+- SQL: All 12 SQLBolt lessons complete 
 - Spark: DataFrames, Transformations, SQL
 - Delta Lake: Time travel, ACID transactions
 - Docker: Dockerfile, build, run
