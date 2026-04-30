@@ -41,3 +41,95 @@ Day 55: Full integration + README
 ✅ Production patterns (idempotent, checkpoints)
 ✅ GraphFrames for model relationships
 ✅ Demonstrates platform-specific knowledge
+
+# 🔍 Real-time ML Model Monitor
+> Production-grade monitoring system for ML models
+> using Databricks Lakehouse architecture
+
+[![Spark](https://img.shields.io/badge/Apache_Spark-3.x-orange)]()
+[![Delta](https://img.shields.io/badge/Delta_Lake-2.x-blue)]()
+[![MLflow](https://img.shields.io/badge/MLflow-2.x-green)]()
+
+## 🎯 Problem Statement
+ML models degrade silently in production.
+Without monitoring, accuracy drops go undetected
+for days — causing business losses.
+
+This system detects model drift in <1 minute
+using real-time streaming on the Databricks
+Lakehouse.
+
+## 🏗️ Architecture
+Kafka Events (predictions)
+↓ Spark Structured Streaming
+↓ Checkpoint: /tmp/checkpoint
+Bronze Delta Table (raw, append-only)
+↓ PySpark batch transform
+↓ Quality validation
+Silver Delta Table (clean, partitioned)
+↓ Window aggregations
+↓ Z-score drift detection
+Gold Delta Table (metrics + alerts)
+↓ MLflow experiment logging
+Model Registry (best model versioned)
+↓ Alert: DRIFT_DETECTED tag
+Retraining trigger
+
+## 📊 Key Results
+| Model | Accuracy | Drift Rate | Status |
+|-------|----------|------------|--------|
+| RF    | 85.2%    | 2.0%       | ✅ Healthy |
+| XGB   | 91.5%    | 8.0%       | 🚨 Alert |
+| NN    | 88.7%    | 3.0%       | ✅ Healthy |
+
+## 🛠️ Tech Stack
+| Component | Technology |
+|-----------|-----------|
+| Streaming | Spark Structured Streaming |
+| Storage | Delta Lake (Bronze/Silver/Gold) |
+| ML Tracking | MLflow (metrics + registry) |
+| Drift Detection | Z-score (rolling window) |
+| Orchestration | Apache Spark |
+
+## 🚀 Quick Start
+```bash
+# 1. Start Bronze ingestion
+python bronze_layer.py
+
+# 2. Process Silver + Gold
+python silver_gold_layers.py
+
+# 3. Log to MLflow
+python mlflow_integration.py
+
+# 4. View experiments
+mlflow ui  # localhost:5000
+```
+
+## 💡 Key Technical Decisions
+**Why Delta Lake over Parquet?**
+ACID transactions prevent corrupt data during
+concurrent streaming writes. Time travel enables
+point-in-time debugging of model behavior.
+
+**Why Z-score for drift detection?**
+Computationally efficient (O(n) rolling window),
+interpretable threshold (|z| > 2.5 = anomaly),
+and works without labeled drift data.
+
+**Why Lakehouse over Lambda?**
+Single unified architecture. No separate batch
+and streaming pipelines to maintain. Delta Lake
+handles both with identical APIs.
+
+## 📈 Skills Demonstrated
+- ✅ Apache Spark (streaming + batch)
+- ✅ Delta Lake (Lakehouse architecture)
+- ✅ MLflow (tracking + model registry)
+- ✅ Real-time drift detection
+- ✅ Production patterns (checkpoints, idempotent)
+- ✅ Data quality validation
+
+---
+*Built during 6-month Databricks prep journey*
+*Day 45 of 180 — Phase 2 complete*
