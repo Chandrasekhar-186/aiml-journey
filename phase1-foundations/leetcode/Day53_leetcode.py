@@ -39,6 +39,7 @@ print(longestIncreasingPath(
      [3,2,6],
      [2,2,1]]))   # 4
 
+
 # Speed challenge — 10 min max!
 # Backtracking pattern
 
