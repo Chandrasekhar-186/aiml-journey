@@ -18,7 +18,7 @@ Performance: Catalyst + Tungsten benefits
 Status:    Active development
 
 ## When to use Graph algorithms at Databricks
-Fraud detection:
+Fraud detection: 
   → Transactions as edges, accounts as nodes
   → Find suspicious clusters (ConnectedComponents)
   → Detect money laundering cycles (TriangleCount)
