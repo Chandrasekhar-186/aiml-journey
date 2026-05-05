@@ -13,7 +13,7 @@ Medium correct:  200 pts
 Hard partial:    150 pts
 Total:           850 pts ← Databricks threshold
 
-## Common CodeSignal Patterns
+## Common CodeSignal Patterns 
 1. Prefix sum + HashMap (subarray sum)
 2. DFS + memo (matrix paths)
 3. Backtracking (combinations, permutations)
