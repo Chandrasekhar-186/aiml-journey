@@ -39,3 +39,21 @@ def subarraySum(nums, k):
 
 print(subarraySum([1,1,1], 2))  # 2
 print(subarraySum([1,2,3], 3))  # 2
+
+
+
+# Speed challenge — 10 min max!
+from collections import defaultdict
+
+def subarraySum(nums, k):
+    count = defaultdict(int)
+    count[0] = 1
+    prefix = result = 0
+    for n in nums:
+        prefix += n
+        result += count[prefix - k]
+        count[prefix] += 1
+    return result
+
+print(subarraySum([1,1,1], 2))  # 2
+print(subarraySum([1,2,3], 3))  # 2
