@@ -133,3 +133,29 @@ handles both with identical APIs.
 ---
 *Built during 6-month Databricks prep journey*
 *Day 45 of 180 — Phase 2 complete*
+
+
+## 🏗️ Phase 2 Highlights (Apache Spark Deep Dive)
+
+### Real-time ML Model Monitor
+**Tech:** PySpark + Kafka + Delta Lake + MLflow + GraphFrames
+
+**Architecture:** Bronze → Silver → Gold → MLflow → Alerts
+
+**Key features:**
+- Detects model drift in <1 minute (Z-score)
+- Exactly-once streaming with Delta ACID
+- 7 Databricks competencies in one project
+- Production patterns: checkpoints, idempotent writes
+
+**[View Project →](phase2-spark/project/)**
+
+### Phase 2 Certifications Earned
+- ✅ Databricks Generative AI Fundamentals
+- ✅ Databricks MLflow Fundamentals
+
+### Phase 2 Stats
+- 30 days of Spark deep dive
+- 40+ LeetCode problems (Phase 2)
+- 4 full cert mock exams (scoring 83-88%)
+- 1 production-grade streaming project
