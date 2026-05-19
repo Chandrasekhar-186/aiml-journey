@@ -41,3 +41,4 @@ Attention → Transformers
 Transformers → Vision Transformers (ViT)
 ViT → YOLOv8 + CLIP in CV week!
 Everything connects! 🎯
+
