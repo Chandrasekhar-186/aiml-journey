@@ -1,75 +1,66 @@
 # Nuthalapati Chandrasekhar
-📧 [email] | 📱 [phone]
-🔗 linkedin.com/in/nuthalapati-chandra-sekhar
-💻 github.com/Chandrasekhar-186/aiml-journey
-📍 Hyderabad, India
+B.Tech AIML 2027 | Hyderabad
+github.com/Chandrasekhar-186/aiml-journey
+linkedin.com/in/nuthalapati-chandra-sekhar
 
 ## Objective
-New Grad MLE/SWE — Databricks (Mosaic AI team)
-B.Tech AIML 2027 | 51-day GitHub streak
-Apache Spark • MLflow • PyTorch • RAG • CV
+New Grad MLE/SWE — Databricks Mosaic AI team
 
-## Education
-B.Tech — Artificial Intelligence & Machine Learning
-[College Name] | 2023–2027 | GPA: [X.X]
-
-## Certifications ← NEW SECTION!
-✅ Databricks Generative AI Fundamentals (2026)
-✅ Databricks MLflow Fundamentals (2026)
-   [Add Spark cert here if/when you take it]
+## Certifications
+✅ Databricks GenAI Fundamentals (FREE)
+✅ Databricks MLflow Fundamentals (FREE)
 
 ## Technical Skills
-Languages:    Python, SQL, Scala (basics)
-ML/DL:        PyTorch, Scikit-learn, XGBoost,
-              HuggingFace Transformers
-CV:           CNNs, YOLOv8, OpenCV, ResNet
-GenAI:        LLMs, RAG (LangChain+FAISS),
-              LoRA/QLoRA, Attention mechanism,
-              Prompt Engineering
-Data Eng:     Apache Spark, PySpark, Delta Lake,
-              Spark SQL, Structured Streaming,
-              Kafka integration
-MLOps:        MLflow (tracking+registry+serving),
-              Docker, Git, CI/CD basics
-Cloud:        Databricks Community Edition,
-              GraphFrames
+Languages:   Python, SQL, Scala (basics)
+ML/DL:       PyTorch, Scikit-learn, XGBoost,
+             HuggingFace, LoRA, PEFT
+CV:          YOLOv8, ViT, CLIP, U-Net, OpenCV
+LLMs:        RAG, BM25, RRF, ReAct Agents
+Big Data:    Apache Spark, PySpark, Delta Lake,
+             Structured Streaming, AQE
+MLOps:       MLflow, Docker, FastAPI,
+             Prometheus, Grafana, CI/CD,
+             Databricks Workflows, DLT
+Cloud:       Databricks, Delta Lake,
+             Unity Catalog
 
 ## Projects
 
-### 🔍 Real-time ML Model Monitor (Phase 2)
-Stack: PySpark + Kafka + Delta Lake (Bronze/Silver/Gold)
-       + MLflow + GraphFrames + Drift Detection
-→ Detects model drift in <1 minute using Z-score
-→ Lakehouse architecture: Bronze→Silver→Gold
-→ Exactly-once streaming with Delta ACID
-→ MLflow tracks all metrics + auto-registers best model
-→ GraphFrames: model dependency PageRank analysis
-GitHub: [link] | 7 Databricks competencies
+### 1. Complete MLOps System (Phase 4 Capstone)
+10 Databricks competencies in one pipeline:
+Delta Lakehouse → Feature Store → MLflow →
+A/B Testing → Drift Detection → FastAPI/Docker →
+Spark Batch → Workflows → Observability → CI/CD
+- 5 automated quality gates block bad deployments
+- KS+PSI drift detection triggers auto-retraining
+- p99 latency benchmarked under 100ms
 
-### 🧠 Intelligent ML Experiment Analyzer (Phase 1)
-Stack: PySpark + Delta Lake + MLflow + RAG
-       (LangChain+FAISS) + CNN + YOLOv8
-→ RAG pipeline: natural language experiment queries
-→ CNN chart classifier: 85% accuracy
-→ Meta-model predicts experiment success (F1: 0.91)
-→ Complete Lakehouse architecture
-GitHub: [link] | 6 Databricks competencies
+### 2. Real-time ML Model Monitor (Phase 2)
+Kafka + Structured Streaming + Delta Lake +
+MLflow + GraphFrames
+- Detects model drift in <1 minute
+- 7 Databricks competencies demonstrated
+- Bronze→Silver→Gold Lakehouse architecture
 
-### 🔍 RAG Pipeline on Databricks
-Stack: LangChain + FAISS + HuggingFace + MLflow
-→ Semantic search over knowledge base
-→ Production-grade chunking + embedding pipeline
-GitHub: [link]
+### 3. CV Detection Pipeline (Phase 3)
+YOLOv8 + Apache Spark + Delta Lake + MLflow
+- Distributed inference via Pandas UDF
+- CLIP zero-shot classification integrated
+- mAP tracking in MLflow experiment registry
 
-## Open Source (Target Phase 4)
-→ MLflow contributor — [PR links when merged]
+### 4. Databricks LLM Assistant (Phase 3)
+Advanced RAG: BM25 + Dense + RRF fusion +
+Cross-encoder reranking + LoRA fine-tuning +
+BLEU/ROUGE/Faithfulness evaluation
+- Hybrid search reduces hallucination by 40%
+- MLflow tracks all evaluation metrics
 
-## GitHub
-51-day contribution streak (ongoing) 🟩🟩🟩
-Daily commits since March 12, 2026
-Repository: github.com/Chandrasekhar-186/aiml-journey
+### 5. Intelligent ML Experiment Analyzer (Phase 1)
+PySpark + Delta Lake + MLflow + RAG + CNN
+- 6 Databricks competencies
+- Phase 1 capstone project
 
-## Superday Simulation Score
-Coding: 9/10 | ML Depth: 9.5/10
-System Design: 8.5/10 | Behavioral: 9.5/10
-Overall: 88.75% — offer territory ✅
+## Education
+B.Tech AIML | Graduating 2027
+95-day GitHub streak (daily commits)
+190+ LeetCode problems solved
