@@ -7,7 +7,7 @@ Question: "Tell me about the most technically
 complex system you built. What made it complex
 and how did you handle it?"
 
-SITUATION:
+SITUATION: 
 For my 6-month Databricks preparation project,
 I designed and built a production-grade real-time
 ML model monitoring system that needed to detect
