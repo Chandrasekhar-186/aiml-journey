@@ -37,7 +37,6 @@ PriceDecisionEngine
  lowest_price: min_price}
 
  ### Low-Level Running Code
-
 ```python
 import asyncio
 import aiohttp
